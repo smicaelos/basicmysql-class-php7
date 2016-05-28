@@ -12,8 +12,6 @@ function showProfile() {
 
 	if ($result = $DB->query("SELECT id, name, age, number FROM profile")){
 		
-		//$size = $result->size();
-		
 		if (!defined('TABLE')) define ('TABLE',['id','name','age','number']);
 		
 		while ($sqlReg=$result->fetch()) {
