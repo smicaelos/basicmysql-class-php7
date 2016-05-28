@@ -1,5 +1,4 @@
 <?php
-declare(strict_types=1);
 
 /**
  *@author : Sergio Soares 2016 (PHP 7 only!)
