@@ -18,7 +18,7 @@ function showProfile() {
 		
 			echo("<p>Candidate with ID \"".$sqlReg[TABLE[0]]."\" named ".$sqlReg[TABLE[1]].
 					" with ".$sqlReg[TABLE[2]]." years old with mobile ".$sqlReg[TABLE[3]].
-					" may wayt for interview.</p>");
+					" may wait for interview.</p>");
 			
 		}
 		
