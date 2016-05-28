@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 // Include MySQL class
-require_once('inc/basicsqli.class.php');
+require_once('inc/basicmysql.class.php');
 // Include database connection
 require_once('inc/global.inc.php');
 
@@ -16,9 +16,9 @@ function showProfile() {
 		
 		while ($sqlReg=$result->fetch()) {
 		
-				echo("<p>Candidate with ID \"".$sqlReg[TABLE[0]]."\" named ".$sqlReg[TABLE[1]].
-						" with ".$sqlReg[TABLE[2]]." years old with mobile ".$sqlReg[TABLE[3]].
-						" may wayt for interview.</p>");
+			echo("<p>Candidate with ID \"".$sqlReg[TABLE[0]]."\" named ".$sqlReg[TABLE[1]].
+					" with ".$sqlReg[TABLE[2]]." years old with mobile ".$sqlReg[TABLE[3]].
+					" may wayt for interview.</p>");
 			
 		}
 		
