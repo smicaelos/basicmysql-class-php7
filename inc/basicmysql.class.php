@@ -5,7 +5,7 @@
 * BasicSQLi Database Connection Class
 * @access public
 */
-class BasicSQLi {
+class BasicMySQL {
     /**
     * MySQL server hostname
     * @access protected

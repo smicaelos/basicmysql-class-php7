@@ -1,7 +1,7 @@
 <?php
 $host = '127.0.0.1';
 $user = 'root';
-$pass = 'mydbpassword';
-$name = 'dbname';
-$DB = new BasicSQLi($host,$user,$pass,$name);
+$pass = '321sergio321';
+$name = 'sqli';
+$DB = new BasicMySQL($host,$user,$pass,$name);
 ?>
