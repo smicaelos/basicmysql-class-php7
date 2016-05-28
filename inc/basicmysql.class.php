@@ -2,7 +2,7 @@
 
 /**
 *@author : Sergio Soares 2016 (PHP 7 &^ only!)
-* BasicSQLi Database Connection Class
+* BasicMySQL Database Connection Class
 * @access public
 */
 class BasicMySQL {
@@ -49,7 +49,7 @@ class BasicMySQL {
     private $connectError;
 
     /**
-    * BasicSQLi constructor
+    * BasicMySQL constructor
     * @param string host (MySQL server hostname)
     * @param string User (MySQL User Name)
     * @param string Pass (MySQL User Password)
@@ -127,7 +127,7 @@ class BasicMySQL {
         		/**
         		 * Instance of a result class providing database connection
         		 * @access private
-        		 * @var BasicSQLi
+        		 * @var BasicMySQL
         		 */
         		private $bsqli;
         		
@@ -140,8 +140,8 @@ class BasicMySQL {
         		
         		/**
         		 * mySQL result constructor
-        		 * @param object mysql   (instance of BasicSQLi class)
-        		 * @param resource query (BasicSQLi query resource)
+        		 * @param object mysql   (instance of BasicMySQL class)
+        		 * @param resource query (BasicMySQL query resource)
         		 * @access public
         		 */
         		public function __construct(& $bsqli,$query)
@@ -173,7 +173,7 @@ class BasicMySQL {
         		}
         		
         		/**
-        		 * Checks for BasicSQLi errors
+        		 * Checks for BasicMySQL errors
         		 * @return boolean
         		 * @access public
         		 */
