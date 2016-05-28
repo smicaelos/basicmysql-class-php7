@@ -155,10 +155,10 @@ class BasicMySQL {
         		 * @return array
         		 * @access public
         		 */
-        		public function fetch()
+        		public function fetch() : array
         		{
         			$row=mysqli_fetch_array($this->query, MYSQLI_ASSOC);
-        			return $row;
+        			return (array)$row;
         		}
         		
         		/**
