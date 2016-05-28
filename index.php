@@ -12,15 +12,15 @@ function showProfile() {
 
 	if ($result = $DB->query("SELECT id, name, age, number FROM profile")){
 		
-		$size = $result->size();
+		//$size = $result->size();
 		
 		if (!defined('TABLE')) define ('TABLE',['id','name','age','number']);
 		
 		while ($sqlReg=$result->fetch()) {
 		
-				echo("<p>Candidate number ".$sqlReg[TABLE[0]]." named ".$sqlReg[TABLE[1]].
+				echo("<p>Candidate with ID \"".$sqlReg[TABLE[0]]."\" named ".$sqlReg[TABLE[1]].
 						" with ".$sqlReg[TABLE[2]]." years old with mobile ".$sqlReg[TABLE[3]].
-						" may sit on the table and wait.</p>");
+						" may wayt for interview.</p>");
 			
 		}
 		
